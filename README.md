@@ -89,7 +89,7 @@ MeshView è l'applicazione mobile per interagire con la rete Meshtastic:
 - **Viste disponibili**:
   - **Map**: Posizione GPS dei nodi e dati ambientali in tempo reale
   - **Heat Map**: Distribuzione spaziale delle misure ambientali
-  - **Log**: Registrazione periodica dei dati, filtrabile per sessione/mese
+  - **Log**: Registrazione periodica dei dati, filtrabile per mese
 
 ### Interfaccia
 
