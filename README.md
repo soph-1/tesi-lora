@@ -129,9 +129,3 @@ Questo progetto è stato sviluppato come lavoro di tesi universitaria a scopo di
 
 L'obiettivo è dimostrare l'implementazione pratica di reti mesh LoRa per applicazioni off-grid e il monitoraggio ambientale distribuito. L'autore non si assume alcuna responsabilità per l'uso improprio del codice o delle informazioni contenute in questa repository.
 
-
-Progetto realizzato a scopo didattico e formativo.
-
-**GitHub**: [Link al profilo]
-
-Per domande, suggerimenti o feedback, sentiti libero di aprire una issue o di contattarmi.
