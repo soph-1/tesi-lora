@@ -31,7 +31,7 @@ L'applicazione include:
 
 ## 📂 Struttura della Repository
 ```
-lora-meshtastic-mesh/
+tesi-lora/
 │
 ├── docs/                   → Tesi
 ├── meshview_app/           → Applicazione mobile MeshView
