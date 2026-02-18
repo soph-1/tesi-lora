@@ -1,0 +1,621 @@
+//
+//  Generated code. Do not modify.
+//  source: meshtastic/mesh.proto
+//
+// @dart = 2.12
+
+// ignore_for_file: annotate_overrides, camel_case_types, comment_references
+// ignore_for_file: constant_identifier_names, library_prefixes
+// ignore_for_file: non_constant_identifier_names, prefer_final_fields
+// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+
+import 'dart:core' as $core;
+
+import 'package:protobuf/protobuf.dart' as $pb;
+
+///
+///  Note: these enum names must EXACTLY match the string used in the device
+///  bin/build-all.sh script.
+///  Because they will be used to find firmware filenames in the android app for OTA updates.
+///  To match the old style filenames, _ is converted to -, p is converted to .
+class HardwareModel extends $pb.ProtobufEnum {
+  static const HardwareModel UNSET = HardwareModel._(0, _omitEnumNames ? '' : 'UNSET');
+  static const HardwareModel TLORA_V2 = HardwareModel._(1, _omitEnumNames ? '' : 'TLORA_V2');
+  static const HardwareModel TLORA_V1 = HardwareModel._(2, _omitEnumNames ? '' : 'TLORA_V1');
+  static const HardwareModel TLORA_V2_1_1P6 = HardwareModel._(3, _omitEnumNames ? '' : 'TLORA_V2_1_1P6');
+  static const HardwareModel TBEAM = HardwareModel._(4, _omitEnumNames ? '' : 'TBEAM');
+  static const HardwareModel HELTEC_V2_0 = HardwareModel._(5, _omitEnumNames ? '' : 'HELTEC_V2_0');
+  static const HardwareModel TBEAM_V0P7 = HardwareModel._(6, _omitEnumNames ? '' : 'TBEAM_V0P7');
+  static const HardwareModel T_ECHO = HardwareModel._(7, _omitEnumNames ? '' : 'T_ECHO');
+  static const HardwareModel TLORA_V1_1P3 = HardwareModel._(8, _omitEnumNames ? '' : 'TLORA_V1_1P3');
+  static const HardwareModel RAK4631 = HardwareModel._(9, _omitEnumNames ? '' : 'RAK4631');
+  static const HardwareModel HELTEC_V2_1 = HardwareModel._(10, _omitEnumNames ? '' : 'HELTEC_V2_1');
+  static const HardwareModel HELTEC_V1 = HardwareModel._(11, _omitEnumNames ? '' : 'HELTEC_V1');
+  static const HardwareModel LILYGO_TBEAM_S3_CORE = HardwareModel._(12, _omitEnumNames ? '' : 'LILYGO_TBEAM_S3_CORE');
+  static const HardwareModel RAK11200 = HardwareModel._(13, _omitEnumNames ? '' : 'RAK11200');
+  static const HardwareModel NANO_G1 = HardwareModel._(14, _omitEnumNames ? '' : 'NANO_G1');
+  static const HardwareModel TLORA_V2_1_1P8 = HardwareModel._(15, _omitEnumNames ? '' : 'TLORA_V2_1_1P8');
+  static const HardwareModel TLORA_T3_S3 = HardwareModel._(16, _omitEnumNames ? '' : 'TLORA_T3_S3');
+  static const HardwareModel NANO_G1_EXPLORER = HardwareModel._(17, _omitEnumNames ? '' : 'NANO_G1_EXPLORER');
+  static const HardwareModel NANO_G2_ULTRA = HardwareModel._(18, _omitEnumNames ? '' : 'NANO_G2_ULTRA');
+  static const HardwareModel LORA_TYPE = HardwareModel._(19, _omitEnumNames ? '' : 'LORA_TYPE');
+  static const HardwareModel WIPHONE = HardwareModel._(20, _omitEnumNames ? '' : 'WIPHONE');
+  static const HardwareModel WIO_WM1110 = HardwareModel._(21, _omitEnumNames ? '' : 'WIO_WM1110');
+  static const HardwareModel RAK2560 = HardwareModel._(22, _omitEnumNames ? '' : 'RAK2560');
+  static const HardwareModel HELTEC_HRU_3601 = HardwareModel._(23, _omitEnumNames ? '' : 'HELTEC_HRU_3601');
+  static const HardwareModel HELTEC_WIRELESS_BRIDGE = HardwareModel._(24, _omitEnumNames ? '' : 'HELTEC_WIRELESS_BRIDGE');
+  static const HardwareModel STATION_G1 = HardwareModel._(25, _omitEnumNames ? '' : 'STATION_G1');
+  static const HardwareModel RAK11310 = HardwareModel._(26, _omitEnumNames ? '' : 'RAK11310');
+  static const HardwareModel SENSELORA_RP2040 = HardwareModel._(27, _omitEnumNames ? '' : 'SENSELORA_RP2040');
+  static const HardwareModel SENSELORA_S3 = HardwareModel._(28, _omitEnumNames ? '' : 'SENSELORA_S3');
+  static const HardwareModel CANARYONE = HardwareModel._(29, _omitEnumNames ? '' : 'CANARYONE');
+  static const HardwareModel RP2040_LORA = HardwareModel._(30, _omitEnumNames ? '' : 'RP2040_LORA');
+  static const HardwareModel STATION_G2 = HardwareModel._(31, _omitEnumNames ? '' : 'STATION_G2');
+  static const HardwareModel LORA_RELAY_V1 = HardwareModel._(32, _omitEnumNames ? '' : 'LORA_RELAY_V1');
+  static const HardwareModel NRF52840DK = HardwareModel._(33, _omitEnumNames ? '' : 'NRF52840DK');
+  static const HardwareModel PPR = HardwareModel._(34, _omitEnumNames ? '' : 'PPR');
+  static const HardwareModel GENIEBLOCKS = HardwareModel._(35, _omitEnumNames ? '' : 'GENIEBLOCKS');
+  static const HardwareModel NRF52_UNKNOWN = HardwareModel._(36, _omitEnumNames ? '' : 'NRF52_UNKNOWN');
+  static const HardwareModel PORTDUINO = HardwareModel._(37, _omitEnumNames ? '' : 'PORTDUINO');
+  static const HardwareModel ANDROID_SIM = HardwareModel._(38, _omitEnumNames ? '' : 'ANDROID_SIM');
+  static const HardwareModel DIY_V1 = HardwareModel._(39, _omitEnumNames ? '' : 'DIY_V1');
+  static const HardwareModel NRF52840_PCA10059 = HardwareModel._(40, _omitEnumNames ? '' : 'NRF52840_PCA10059');
+  static const HardwareModel DR_DEV = HardwareModel._(41, _omitEnumNames ? '' : 'DR_DEV');
+  static const HardwareModel M5STACK = HardwareModel._(42, _omitEnumNames ? '' : 'M5STACK');
+  static const HardwareModel HELTEC_V3 = HardwareModel._(43, _omitEnumNames ? '' : 'HELTEC_V3');
+  static const HardwareModel HELTEC_WSL_V3 = HardwareModel._(44, _omitEnumNames ? '' : 'HELTEC_WSL_V3');
+  static const HardwareModel BETAFPV_2400_TX = HardwareModel._(45, _omitEnumNames ? '' : 'BETAFPV_2400_TX');
+  static const HardwareModel BETAFPV_900_NANO_TX = HardwareModel._(46, _omitEnumNames ? '' : 'BETAFPV_900_NANO_TX');
+  static const HardwareModel RPI_PICO = HardwareModel._(47, _omitEnumNames ? '' : 'RPI_PICO');
+  static const HardwareModel HELTEC_WIRELESS_TRACKER = HardwareModel._(48, _omitEnumNames ? '' : 'HELTEC_WIRELESS_TRACKER');
+  static const HardwareModel HELTEC_WIRELESS_PAPER = HardwareModel._(49, _omitEnumNames ? '' : 'HELTEC_WIRELESS_PAPER');
+  static const HardwareModel T_DECK = HardwareModel._(50, _omitEnumNames ? '' : 'T_DECK');
+  static const HardwareModel T_WATCH_S3 = HardwareModel._(51, _omitEnumNames ? '' : 'T_WATCH_S3');
+  static const HardwareModel PICOMPUTER_S3 = HardwareModel._(52, _omitEnumNames ? '' : 'PICOMPUTER_S3');
+  static const HardwareModel HELTEC_HT62 = HardwareModel._(53, _omitEnumNames ? '' : 'HELTEC_HT62');
+  static const HardwareModel EBYTE_ESP32_S3 = HardwareModel._(54, _omitEnumNames ? '' : 'EBYTE_ESP32_S3');
+  static const HardwareModel ESP32_S3_PICO = HardwareModel._(55, _omitEnumNames ? '' : 'ESP32_S3_PICO');
+  static const HardwareModel CHATTER_2 = HardwareModel._(56, _omitEnumNames ? '' : 'CHATTER_2');
+  static const HardwareModel HELTEC_WIRELESS_PAPER_V1_0 = HardwareModel._(57, _omitEnumNames ? '' : 'HELTEC_WIRELESS_PAPER_V1_0');
+  static const HardwareModel HELTEC_WIRELESS_TRACKER_V1_0 = HardwareModel._(58, _omitEnumNames ? '' : 'HELTEC_WIRELESS_TRACKER_V1_0');
+  static const HardwareModel UNPHONE = HardwareModel._(59, _omitEnumNames ? '' : 'UNPHONE');
+  static const HardwareModel TD_LORAC = HardwareModel._(60, _omitEnumNames ? '' : 'TD_LORAC');
+  static const HardwareModel CDEBYTE_EORA_S3 = HardwareModel._(61, _omitEnumNames ? '' : 'CDEBYTE_EORA_S3');
+  static const HardwareModel TWC_MESH_V4 = HardwareModel._(62, _omitEnumNames ? '' : 'TWC_MESH_V4');
+  static const HardwareModel NRF52_PROMICRO_DIY = HardwareModel._(63, _omitEnumNames ? '' : 'NRF52_PROMICRO_DIY');
+  static const HardwareModel RADIOMASTER_900_BANDIT_NANO = HardwareModel._(64, _omitEnumNames ? '' : 'RADIOMASTER_900_BANDIT_NANO');
+  static const HardwareModel HELTEC_CAPSULE_SENSOR_V3 = HardwareModel._(65, _omitEnumNames ? '' : 'HELTEC_CAPSULE_SENSOR_V3');
+  static const HardwareModel HELTEC_VISION_MASTER_T190 = HardwareModel._(66, _omitEnumNames ? '' : 'HELTEC_VISION_MASTER_T190');
+  static const HardwareModel HELTEC_VISION_MASTER_E213 = HardwareModel._(67, _omitEnumNames ? '' : 'HELTEC_VISION_MASTER_E213');
+  static const HardwareModel HELTEC_VISION_MASTER_E290 = HardwareModel._(68, _omitEnumNames ? '' : 'HELTEC_VISION_MASTER_E290');
+  static const HardwareModel HELTEC_MESH_NODE_T114 = HardwareModel._(69, _omitEnumNames ? '' : 'HELTEC_MESH_NODE_T114');
+  static const HardwareModel SENSECAP_INDICATOR = HardwareModel._(70, _omitEnumNames ? '' : 'SENSECAP_INDICATOR');
+  static const HardwareModel TRACKER_T1000_E = HardwareModel._(71, _omitEnumNames ? '' : 'TRACKER_T1000_E');
+  static const HardwareModel RAK3172 = HardwareModel._(72, _omitEnumNames ? '' : 'RAK3172');
+  static const HardwareModel WIO_E5 = HardwareModel._(73, _omitEnumNames ? '' : 'WIO_E5');
+  static const HardwareModel RADIOMASTER_900_BANDIT = HardwareModel._(74, _omitEnumNames ? '' : 'RADIOMASTER_900_BANDIT');
+  static const HardwareModel ME25LS01_4Y10TD = HardwareModel._(75, _omitEnumNames ? '' : 'ME25LS01_4Y10TD');
+  static const HardwareModel RP2040_FEATHER_RFM95 = HardwareModel._(76, _omitEnumNames ? '' : 'RP2040_FEATHER_RFM95');
+  static const HardwareModel M5STACK_COREBASIC = HardwareModel._(77, _omitEnumNames ? '' : 'M5STACK_COREBASIC');
+  static const HardwareModel M5STACK_CORE2 = HardwareModel._(78, _omitEnumNames ? '' : 'M5STACK_CORE2');
+  static const HardwareModel RPI_PICO2 = HardwareModel._(79, _omitEnumNames ? '' : 'RPI_PICO2');
+  static const HardwareModel M5STACK_CORES3 = HardwareModel._(80, _omitEnumNames ? '' : 'M5STACK_CORES3');
+  static const HardwareModel SEEED_XIAO_S3 = HardwareModel._(81, _omitEnumNames ? '' : 'SEEED_XIAO_S3');
+  static const HardwareModel MS24SF1 = HardwareModel._(82, _omitEnumNames ? '' : 'MS24SF1');
+  static const HardwareModel TLORA_C6 = HardwareModel._(83, _omitEnumNames ? '' : 'TLORA_C6');
+  static const HardwareModel WISMESH_TAP = HardwareModel._(84, _omitEnumNames ? '' : 'WISMESH_TAP');
+  static const HardwareModel ROUTASTIC = HardwareModel._(85, _omitEnumNames ? '' : 'ROUTASTIC');
+  static const HardwareModel MESH_TAB = HardwareModel._(86, _omitEnumNames ? '' : 'MESH_TAB');
+  static const HardwareModel MESHLINK = HardwareModel._(87, _omitEnumNames ? '' : 'MESHLINK');
+  static const HardwareModel XIAO_NRF52_KIT = HardwareModel._(88, _omitEnumNames ? '' : 'XIAO_NRF52_KIT');
+  static const HardwareModel THINKNODE_M1 = HardwareModel._(89, _omitEnumNames ? '' : 'THINKNODE_M1');
+  static const HardwareModel THINKNODE_M2 = HardwareModel._(90, _omitEnumNames ? '' : 'THINKNODE_M2');
+  static const HardwareModel T_ETH_ELITE = HardwareModel._(91, _omitEnumNames ? '' : 'T_ETH_ELITE');
+  static const HardwareModel HELTEC_SENSOR_HUB = HardwareModel._(92, _omitEnumNames ? '' : 'HELTEC_SENSOR_HUB');
+  static const HardwareModel RESERVED_FRIED_CHICKEN = HardwareModel._(93, _omitEnumNames ? '' : 'RESERVED_FRIED_CHICKEN');
+  static const HardwareModel HELTEC_MESH_POCKET = HardwareModel._(94, _omitEnumNames ? '' : 'HELTEC_MESH_POCKET');
+  static const HardwareModel SEEED_SOLAR_NODE = HardwareModel._(95, _omitEnumNames ? '' : 'SEEED_SOLAR_NODE');
+  static const HardwareModel NOMADSTAR_METEOR_PRO = HardwareModel._(96, _omitEnumNames ? '' : 'NOMADSTAR_METEOR_PRO');
+  static const HardwareModel CROWPANEL = HardwareModel._(97, _omitEnumNames ? '' : 'CROWPANEL');
+  static const HardwareModel LINK_32 = HardwareModel._(98, _omitEnumNames ? '' : 'LINK_32');
+  static const HardwareModel SEEED_WIO_TRACKER_L1 = HardwareModel._(99, _omitEnumNames ? '' : 'SEEED_WIO_TRACKER_L1');
+  static const HardwareModel SEEED_WIO_TRACKER_L1_EINK = HardwareModel._(100, _omitEnumNames ? '' : 'SEEED_WIO_TRACKER_L1_EINK');
+  static const HardwareModel MUZI_R1_NEO = HardwareModel._(101, _omitEnumNames ? '' : 'MUZI_R1_NEO');
+  static const HardwareModel T_DECK_PRO = HardwareModel._(102, _omitEnumNames ? '' : 'T_DECK_PRO');
+  static const HardwareModel T_LORA_PAGER = HardwareModel._(103, _omitEnumNames ? '' : 'T_LORA_PAGER');
+  static const HardwareModel M5STACK_RESERVED = HardwareModel._(104, _omitEnumNames ? '' : 'M5STACK_RESERVED');
+  static const HardwareModel WISMESH_TAG = HardwareModel._(105, _omitEnumNames ? '' : 'WISMESH_TAG');
+  static const HardwareModel RAK3312 = HardwareModel._(106, _omitEnumNames ? '' : 'RAK3312');
+  static const HardwareModel THINKNODE_M5 = HardwareModel._(107, _omitEnumNames ? '' : 'THINKNODE_M5');
+  static const HardwareModel HELTEC_MESH_SOLAR = HardwareModel._(108, _omitEnumNames ? '' : 'HELTEC_MESH_SOLAR');
+  static const HardwareModel T_ECHO_LITE = HardwareModel._(109, _omitEnumNames ? '' : 'T_ECHO_LITE');
+  static const HardwareModel HELTEC_V4 = HardwareModel._(110, _omitEnumNames ? '' : 'HELTEC_V4');
+  static const HardwareModel M5STACK_C6L = HardwareModel._(111, _omitEnumNames ? '' : 'M5STACK_C6L');
+  static const HardwareModel M5STACK_CARDPUTER_ADV = HardwareModel._(112, _omitEnumNames ? '' : 'M5STACK_CARDPUTER_ADV');
+  static const HardwareModel HELTEC_WIRELESS_TRACKER_V2 = HardwareModel._(113, _omitEnumNames ? '' : 'HELTEC_WIRELESS_TRACKER_V2');
+  static const HardwareModel T_WATCH_ULTRA = HardwareModel._(114, _omitEnumNames ? '' : 'T_WATCH_ULTRA');
+  static const HardwareModel THINKNODE_M3 = HardwareModel._(115, _omitEnumNames ? '' : 'THINKNODE_M3');
+  static const HardwareModel PRIVATE_HW = HardwareModel._(255, _omitEnumNames ? '' : 'PRIVATE_HW');
+
+  static const $core.List<HardwareModel> values = <HardwareModel> [
+    UNSET,
+    TLORA_V2,
+    TLORA_V1,
+    TLORA_V2_1_1P6,
+    TBEAM,
+    HELTEC_V2_0,
+    TBEAM_V0P7,
+    T_ECHO,
+    TLORA_V1_1P3,
+    RAK4631,
+    HELTEC_V2_1,
+    HELTEC_V1,
+    LILYGO_TBEAM_S3_CORE,
+    RAK11200,
+    NANO_G1,
+    TLORA_V2_1_1P8,
+    TLORA_T3_S3,
+    NANO_G1_EXPLORER,
+    NANO_G2_ULTRA,
+    LORA_TYPE,
+    WIPHONE,
+    WIO_WM1110,
+    RAK2560,
+    HELTEC_HRU_3601,
+    HELTEC_WIRELESS_BRIDGE,
+    STATION_G1,
+    RAK11310,
+    SENSELORA_RP2040,
+    SENSELORA_S3,
+    CANARYONE,
+    RP2040_LORA,
+    STATION_G2,
+    LORA_RELAY_V1,
+    NRF52840DK,
+    PPR,
+    GENIEBLOCKS,
+    NRF52_UNKNOWN,
+    PORTDUINO,
+    ANDROID_SIM,
+    DIY_V1,
+    NRF52840_PCA10059,
+    DR_DEV,
+    M5STACK,
+    HELTEC_V3,
+    HELTEC_WSL_V3,
+    BETAFPV_2400_TX,
+    BETAFPV_900_NANO_TX,
+    RPI_PICO,
+    HELTEC_WIRELESS_TRACKER,
+    HELTEC_WIRELESS_PAPER,
+    T_DECK,
+    T_WATCH_S3,
+    PICOMPUTER_S3,
+    HELTEC_HT62,
+    EBYTE_ESP32_S3,
+    ESP32_S3_PICO,
+    CHATTER_2,
+    HELTEC_WIRELESS_PAPER_V1_0,
+    HELTEC_WIRELESS_TRACKER_V1_0,
+    UNPHONE,
+    TD_LORAC,
+    CDEBYTE_EORA_S3,
+    TWC_MESH_V4,
+    NRF52_PROMICRO_DIY,
+    RADIOMASTER_900_BANDIT_NANO,
+    HELTEC_CAPSULE_SENSOR_V3,
+    HELTEC_VISION_MASTER_T190,
+    HELTEC_VISION_MASTER_E213,
+    HELTEC_VISION_MASTER_E290,
+    HELTEC_MESH_NODE_T114,
+    SENSECAP_INDICATOR,
+    TRACKER_T1000_E,
+    RAK3172,
+    WIO_E5,
+    RADIOMASTER_900_BANDIT,
+    ME25LS01_4Y10TD,
+    RP2040_FEATHER_RFM95,
+    M5STACK_COREBASIC,
+    M5STACK_CORE2,
+    RPI_PICO2,
+    M5STACK_CORES3,
+    SEEED_XIAO_S3,
+    MS24SF1,
+    TLORA_C6,
+    WISMESH_TAP,
+    ROUTASTIC,
+    MESH_TAB,
+    MESHLINK,
+    XIAO_NRF52_KIT,
+    THINKNODE_M1,
+    THINKNODE_M2,
+    T_ETH_ELITE,
+    HELTEC_SENSOR_HUB,
+    RESERVED_FRIED_CHICKEN,
+    HELTEC_MESH_POCKET,
+    SEEED_SOLAR_NODE,
+    NOMADSTAR_METEOR_PRO,
+    CROWPANEL,
+    LINK_32,
+    SEEED_WIO_TRACKER_L1,
+    SEEED_WIO_TRACKER_L1_EINK,
+    MUZI_R1_NEO,
+    T_DECK_PRO,
+    T_LORA_PAGER,
+    M5STACK_RESERVED,
+    WISMESH_TAG,
+    RAK3312,
+    THINKNODE_M5,
+    HELTEC_MESH_SOLAR,
+    T_ECHO_LITE,
+    HELTEC_V4,
+    M5STACK_C6L,
+    M5STACK_CARDPUTER_ADV,
+    HELTEC_WIRELESS_TRACKER_V2,
+    T_WATCH_ULTRA,
+    THINKNODE_M3,
+    PRIVATE_HW,
+  ];
+
+  static final $core.Map<$core.int, HardwareModel> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static HardwareModel? valueOf($core.int value) => _byValue[value];
+
+  const HardwareModel._($core.int v, $core.String n) : super(v, n);
+}
+
+///
+///  Shared constants between device and phone
+class Constants extends $pb.ProtobufEnum {
+  static const Constants ZERO = Constants._(0, _omitEnumNames ? '' : 'ZERO');
+  static const Constants DATA_PAYLOAD_LEN = Constants._(233, _omitEnumNames ? '' : 'DATA_PAYLOAD_LEN');
+
+  static const $core.List<Constants> values = <Constants> [
+    ZERO,
+    DATA_PAYLOAD_LEN,
+  ];
+
+  static final $core.Map<$core.int, Constants> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static Constants? valueOf($core.int value) => _byValue[value];
+
+  const Constants._($core.int v, $core.String n) : super(v, n);
+}
+
+///
+///  Error codes for critical errors
+///  The device might report these fault codes on the screen.
+///  If you encounter a fault code, please post on the meshtastic.discourse.group
+///  and we'll try to help.
+class CriticalErrorCode extends $pb.ProtobufEnum {
+  static const CriticalErrorCode NONE = CriticalErrorCode._(0, _omitEnumNames ? '' : 'NONE');
+  static const CriticalErrorCode TX_WATCHDOG = CriticalErrorCode._(1, _omitEnumNames ? '' : 'TX_WATCHDOG');
+  static const CriticalErrorCode SLEEP_ENTER_WAIT = CriticalErrorCode._(2, _omitEnumNames ? '' : 'SLEEP_ENTER_WAIT');
+  static const CriticalErrorCode NO_RADIO = CriticalErrorCode._(3, _omitEnumNames ? '' : 'NO_RADIO');
+  static const CriticalErrorCode UNSPECIFIED = CriticalErrorCode._(4, _omitEnumNames ? '' : 'UNSPECIFIED');
+  static const CriticalErrorCode UBLOX_UNIT_FAILED = CriticalErrorCode._(5, _omitEnumNames ? '' : 'UBLOX_UNIT_FAILED');
+  static const CriticalErrorCode NO_AXP192 = CriticalErrorCode._(6, _omitEnumNames ? '' : 'NO_AXP192');
+  static const CriticalErrorCode INVALID_RADIO_SETTING = CriticalErrorCode._(7, _omitEnumNames ? '' : 'INVALID_RADIO_SETTING');
+  static const CriticalErrorCode TRANSMIT_FAILED = CriticalErrorCode._(8, _omitEnumNames ? '' : 'TRANSMIT_FAILED');
+  static const CriticalErrorCode BROWNOUT = CriticalErrorCode._(9, _omitEnumNames ? '' : 'BROWNOUT');
+  static const CriticalErrorCode SX1262_FAILURE = CriticalErrorCode._(10, _omitEnumNames ? '' : 'SX1262_FAILURE');
+  static const CriticalErrorCode RADIO_SPI_BUG = CriticalErrorCode._(11, _omitEnumNames ? '' : 'RADIO_SPI_BUG');
+  static const CriticalErrorCode FLASH_CORRUPTION_RECOVERABLE = CriticalErrorCode._(12, _omitEnumNames ? '' : 'FLASH_CORRUPTION_RECOVERABLE');
+  static const CriticalErrorCode FLASH_CORRUPTION_UNRECOVERABLE = CriticalErrorCode._(13, _omitEnumNames ? '' : 'FLASH_CORRUPTION_UNRECOVERABLE');
+
+  static const $core.List<CriticalErrorCode> values = <CriticalErrorCode> [
+    NONE,
+    TX_WATCHDOG,
+    SLEEP_ENTER_WAIT,
+    NO_RADIO,
+    UNSPECIFIED,
+    UBLOX_UNIT_FAILED,
+    NO_AXP192,
+    INVALID_RADIO_SETTING,
+    TRANSMIT_FAILED,
+    BROWNOUT,
+    SX1262_FAILURE,
+    RADIO_SPI_BUG,
+    FLASH_CORRUPTION_RECOVERABLE,
+    FLASH_CORRUPTION_UNRECOVERABLE,
+  ];
+
+  static final $core.Map<$core.int, CriticalErrorCode> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static CriticalErrorCode? valueOf($core.int value) => _byValue[value];
+
+  const CriticalErrorCode._($core.int v, $core.String n) : super(v, n);
+}
+
+///
+///  Enum to indicate to clients whether this firmware is a special firmware build, like an event.
+///  The first 16 values are reserved for non-event special firmwares, like the Smart Citizen use case.
+class FirmwareEdition extends $pb.ProtobufEnum {
+  static const FirmwareEdition VANILLA = FirmwareEdition._(0, _omitEnumNames ? '' : 'VANILLA');
+  static const FirmwareEdition SMART_CITIZEN = FirmwareEdition._(1, _omitEnumNames ? '' : 'SMART_CITIZEN');
+  static const FirmwareEdition OPEN_SAUCE = FirmwareEdition._(16, _omitEnumNames ? '' : 'OPEN_SAUCE');
+  static const FirmwareEdition DEFCON = FirmwareEdition._(17, _omitEnumNames ? '' : 'DEFCON');
+  static const FirmwareEdition BURNING_MAN = FirmwareEdition._(18, _omitEnumNames ? '' : 'BURNING_MAN');
+  static const FirmwareEdition HAMVENTION = FirmwareEdition._(19, _omitEnumNames ? '' : 'HAMVENTION');
+  static const FirmwareEdition DIY_EDITION = FirmwareEdition._(127, _omitEnumNames ? '' : 'DIY_EDITION');
+
+  static const $core.List<FirmwareEdition> values = <FirmwareEdition> [
+    VANILLA,
+    SMART_CITIZEN,
+    OPEN_SAUCE,
+    DEFCON,
+    BURNING_MAN,
+    HAMVENTION,
+    DIY_EDITION,
+  ];
+
+  static final $core.Map<$core.int, FirmwareEdition> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static FirmwareEdition? valueOf($core.int value) => _byValue[value];
+
+  const FirmwareEdition._($core.int v, $core.String n) : super(v, n);
+}
+
+///
+///  Enum for modules excluded from a device's configuration.
+///  Each value represents a ModuleConfigType that can be toggled as excluded
+///  by setting its corresponding bit in the `excluded_modules` bitmask field.
+class ExcludedModules extends $pb.ProtobufEnum {
+  static const ExcludedModules EXCLUDED_NONE = ExcludedModules._(0, _omitEnumNames ? '' : 'EXCLUDED_NONE');
+  static const ExcludedModules MQTT_CONFIG = ExcludedModules._(1, _omitEnumNames ? '' : 'MQTT_CONFIG');
+  static const ExcludedModules SERIAL_CONFIG = ExcludedModules._(2, _omitEnumNames ? '' : 'SERIAL_CONFIG');
+  static const ExcludedModules EXTNOTIF_CONFIG = ExcludedModules._(4, _omitEnumNames ? '' : 'EXTNOTIF_CONFIG');
+  static const ExcludedModules STOREFORWARD_CONFIG = ExcludedModules._(8, _omitEnumNames ? '' : 'STOREFORWARD_CONFIG');
+  static const ExcludedModules RANGETEST_CONFIG = ExcludedModules._(16, _omitEnumNames ? '' : 'RANGETEST_CONFIG');
+  static const ExcludedModules TELEMETRY_CONFIG = ExcludedModules._(32, _omitEnumNames ? '' : 'TELEMETRY_CONFIG');
+  static const ExcludedModules CANNEDMSG_CONFIG = ExcludedModules._(64, _omitEnumNames ? '' : 'CANNEDMSG_CONFIG');
+  static const ExcludedModules AUDIO_CONFIG = ExcludedModules._(128, _omitEnumNames ? '' : 'AUDIO_CONFIG');
+  static const ExcludedModules REMOTEHARDWARE_CONFIG = ExcludedModules._(256, _omitEnumNames ? '' : 'REMOTEHARDWARE_CONFIG');
+  static const ExcludedModules NEIGHBORINFO_CONFIG = ExcludedModules._(512, _omitEnumNames ? '' : 'NEIGHBORINFO_CONFIG');
+  static const ExcludedModules AMBIENTLIGHTING_CONFIG = ExcludedModules._(1024, _omitEnumNames ? '' : 'AMBIENTLIGHTING_CONFIG');
+  static const ExcludedModules DETECTIONSENSOR_CONFIG = ExcludedModules._(2048, _omitEnumNames ? '' : 'DETECTIONSENSOR_CONFIG');
+  static const ExcludedModules PAXCOUNTER_CONFIG = ExcludedModules._(4096, _omitEnumNames ? '' : 'PAXCOUNTER_CONFIG');
+  static const ExcludedModules BLUETOOTH_CONFIG = ExcludedModules._(8192, _omitEnumNames ? '' : 'BLUETOOTH_CONFIG');
+  static const ExcludedModules NETWORK_CONFIG = ExcludedModules._(16384, _omitEnumNames ? '' : 'NETWORK_CONFIG');
+
+  static const $core.List<ExcludedModules> values = <ExcludedModules> [
+    EXCLUDED_NONE,
+    MQTT_CONFIG,
+    SERIAL_CONFIG,
+    EXTNOTIF_CONFIG,
+    STOREFORWARD_CONFIG,
+    RANGETEST_CONFIG,
+    TELEMETRY_CONFIG,
+    CANNEDMSG_CONFIG,
+    AUDIO_CONFIG,
+    REMOTEHARDWARE_CONFIG,
+    NEIGHBORINFO_CONFIG,
+    AMBIENTLIGHTING_CONFIG,
+    DETECTIONSENSOR_CONFIG,
+    PAXCOUNTER_CONFIG,
+    BLUETOOTH_CONFIG,
+    NETWORK_CONFIG,
+  ];
+
+  static final $core.Map<$core.int, ExcludedModules> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static ExcludedModules? valueOf($core.int value) => _byValue[value];
+
+  const ExcludedModules._($core.int v, $core.String n) : super(v, n);
+}
+
+///
+///  How the location was acquired: manual, onboard GPS, external (EUD) GPS
+class Position_LocSource extends $pb.ProtobufEnum {
+  static const Position_LocSource LOC_UNSET = Position_LocSource._(0, _omitEnumNames ? '' : 'LOC_UNSET');
+  static const Position_LocSource LOC_MANUAL = Position_LocSource._(1, _omitEnumNames ? '' : 'LOC_MANUAL');
+  static const Position_LocSource LOC_INTERNAL = Position_LocSource._(2, _omitEnumNames ? '' : 'LOC_INTERNAL');
+  static const Position_LocSource LOC_EXTERNAL = Position_LocSource._(3, _omitEnumNames ? '' : 'LOC_EXTERNAL');
+
+  static const $core.List<Position_LocSource> values = <Position_LocSource> [
+    LOC_UNSET,
+    LOC_MANUAL,
+    LOC_INTERNAL,
+    LOC_EXTERNAL,
+  ];
+
+  static final $core.Map<$core.int, Position_LocSource> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static Position_LocSource? valueOf($core.int value) => _byValue[value];
+
+  const Position_LocSource._($core.int v, $core.String n) : super(v, n);
+}
+
+///
+///  How the altitude was acquired: manual, GPS int/ext, etc
+///  Default: same as location_source if present
+class Position_AltSource extends $pb.ProtobufEnum {
+  static const Position_AltSource ALT_UNSET = Position_AltSource._(0, _omitEnumNames ? '' : 'ALT_UNSET');
+  static const Position_AltSource ALT_MANUAL = Position_AltSource._(1, _omitEnumNames ? '' : 'ALT_MANUAL');
+  static const Position_AltSource ALT_INTERNAL = Position_AltSource._(2, _omitEnumNames ? '' : 'ALT_INTERNAL');
+  static const Position_AltSource ALT_EXTERNAL = Position_AltSource._(3, _omitEnumNames ? '' : 'ALT_EXTERNAL');
+  static const Position_AltSource ALT_BAROMETRIC = Position_AltSource._(4, _omitEnumNames ? '' : 'ALT_BAROMETRIC');
+
+  static const $core.List<Position_AltSource> values = <Position_AltSource> [
+    ALT_UNSET,
+    ALT_MANUAL,
+    ALT_INTERNAL,
+    ALT_EXTERNAL,
+    ALT_BAROMETRIC,
+  ];
+
+  static final $core.Map<$core.int, Position_AltSource> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static Position_AltSource? valueOf($core.int value) => _byValue[value];
+
+  const Position_AltSource._($core.int v, $core.String n) : super(v, n);
+}
+
+///
+///  A failure in delivering a message (usually used for routing control messages, but might be provided in addition to ack.fail_id to provide
+///  details on the type of failure).
+class Routing_Error extends $pb.ProtobufEnum {
+  static const Routing_Error NONE = Routing_Error._(0, _omitEnumNames ? '' : 'NONE');
+  static const Routing_Error NO_ROUTE = Routing_Error._(1, _omitEnumNames ? '' : 'NO_ROUTE');
+  static const Routing_Error GOT_NAK = Routing_Error._(2, _omitEnumNames ? '' : 'GOT_NAK');
+  static const Routing_Error TIMEOUT = Routing_Error._(3, _omitEnumNames ? '' : 'TIMEOUT');
+  static const Routing_Error NO_INTERFACE = Routing_Error._(4, _omitEnumNames ? '' : 'NO_INTERFACE');
+  static const Routing_Error MAX_RETRANSMIT = Routing_Error._(5, _omitEnumNames ? '' : 'MAX_RETRANSMIT');
+  static const Routing_Error NO_CHANNEL = Routing_Error._(6, _omitEnumNames ? '' : 'NO_CHANNEL');
+  static const Routing_Error TOO_LARGE = Routing_Error._(7, _omitEnumNames ? '' : 'TOO_LARGE');
+  static const Routing_Error NO_RESPONSE = Routing_Error._(8, _omitEnumNames ? '' : 'NO_RESPONSE');
+  static const Routing_Error DUTY_CYCLE_LIMIT = Routing_Error._(9, _omitEnumNames ? '' : 'DUTY_CYCLE_LIMIT');
+  static const Routing_Error BAD_REQUEST = Routing_Error._(32, _omitEnumNames ? '' : 'BAD_REQUEST');
+  static const Routing_Error NOT_AUTHORIZED = Routing_Error._(33, _omitEnumNames ? '' : 'NOT_AUTHORIZED');
+  static const Routing_Error PKI_FAILED = Routing_Error._(34, _omitEnumNames ? '' : 'PKI_FAILED');
+  static const Routing_Error PKI_UNKNOWN_PUBKEY = Routing_Error._(35, _omitEnumNames ? '' : 'PKI_UNKNOWN_PUBKEY');
+  static const Routing_Error ADMIN_BAD_SESSION_KEY = Routing_Error._(36, _omitEnumNames ? '' : 'ADMIN_BAD_SESSION_KEY');
+  static const Routing_Error ADMIN_PUBLIC_KEY_UNAUTHORIZED = Routing_Error._(37, _omitEnumNames ? '' : 'ADMIN_PUBLIC_KEY_UNAUTHORIZED');
+  static const Routing_Error RATE_LIMIT_EXCEEDED = Routing_Error._(38, _omitEnumNames ? '' : 'RATE_LIMIT_EXCEEDED');
+
+  static const $core.List<Routing_Error> values = <Routing_Error> [
+    NONE,
+    NO_ROUTE,
+    GOT_NAK,
+    TIMEOUT,
+    NO_INTERFACE,
+    MAX_RETRANSMIT,
+    NO_CHANNEL,
+    TOO_LARGE,
+    NO_RESPONSE,
+    DUTY_CYCLE_LIMIT,
+    BAD_REQUEST,
+    NOT_AUTHORIZED,
+    PKI_FAILED,
+    PKI_UNKNOWN_PUBKEY,
+    ADMIN_BAD_SESSION_KEY,
+    ADMIN_PUBLIC_KEY_UNAUTHORIZED,
+    RATE_LIMIT_EXCEEDED,
+  ];
+
+  static final $core.Map<$core.int, Routing_Error> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static Routing_Error? valueOf($core.int value) => _byValue[value];
+
+  const Routing_Error._($core.int v, $core.String n) : super(v, n);
+}
+
+///
+///  The priority of this message for sending.
+///  Higher priorities are sent first (when managing the transmit queue).
+///  This field is never sent over the air, it is only used internally inside of a local device node.
+///  API clients (either on the local node or connected directly to the node)
+///  can set this parameter if necessary.
+///  (values must be <= 127 to keep protobuf field to one byte in size.
+///  Detailed background on this field:
+///  I noticed a funny side effect of lora being so slow: Usually when making
+///  a protocol there isn’t much need to use message priority to change the order
+///  of transmission (because interfaces are fairly fast).
+///  But for lora where packets can take a few seconds each, it is very important
+///  to make sure that critical packets are sent ASAP.
+///  In the case of meshtastic that means we want to send protocol acks as soon as possible
+///  (to prevent unneeded retransmissions), we want routing messages to be sent next,
+///  then messages marked as reliable and finally 'background' packets like periodic position updates.
+///  So I bit the bullet and implemented a new (internal - not sent over the air)
+///  field in MeshPacket called 'priority'.
+///  And the transmission queue in the router object is now a priority queue.
+class MeshPacket_Priority extends $pb.ProtobufEnum {
+  static const MeshPacket_Priority UNSET = MeshPacket_Priority._(0, _omitEnumNames ? '' : 'UNSET');
+  static const MeshPacket_Priority MIN = MeshPacket_Priority._(1, _omitEnumNames ? '' : 'MIN');
+  static const MeshPacket_Priority BACKGROUND = MeshPacket_Priority._(10, _omitEnumNames ? '' : 'BACKGROUND');
+  static const MeshPacket_Priority DEFAULT = MeshPacket_Priority._(64, _omitEnumNames ? '' : 'DEFAULT');
+  static const MeshPacket_Priority RELIABLE = MeshPacket_Priority._(70, _omitEnumNames ? '' : 'RELIABLE');
+  static const MeshPacket_Priority RESPONSE = MeshPacket_Priority._(80, _omitEnumNames ? '' : 'RESPONSE');
+  static const MeshPacket_Priority HIGH = MeshPacket_Priority._(100, _omitEnumNames ? '' : 'HIGH');
+  static const MeshPacket_Priority ALERT = MeshPacket_Priority._(110, _omitEnumNames ? '' : 'ALERT');
+  static const MeshPacket_Priority ACK = MeshPacket_Priority._(120, _omitEnumNames ? '' : 'ACK');
+  static const MeshPacket_Priority MAX = MeshPacket_Priority._(127, _omitEnumNames ? '' : 'MAX');
+
+  static const $core.List<MeshPacket_Priority> values = <MeshPacket_Priority> [
+    UNSET,
+    MIN,
+    BACKGROUND,
+    DEFAULT,
+    RELIABLE,
+    RESPONSE,
+    HIGH,
+    ALERT,
+    ACK,
+    MAX,
+  ];
+
+  static final $core.Map<$core.int, MeshPacket_Priority> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static MeshPacket_Priority? valueOf($core.int value) => _byValue[value];
+
+  const MeshPacket_Priority._($core.int v, $core.String n) : super(v, n);
+}
+
+///
+///  Identify if this is a delayed packet
+class MeshPacket_Delayed extends $pb.ProtobufEnum {
+  static const MeshPacket_Delayed NO_DELAY = MeshPacket_Delayed._(0, _omitEnumNames ? '' : 'NO_DELAY');
+  static const MeshPacket_Delayed DELAYED_BROADCAST = MeshPacket_Delayed._(1, _omitEnumNames ? '' : 'DELAYED_BROADCAST');
+  static const MeshPacket_Delayed DELAYED_DIRECT = MeshPacket_Delayed._(2, _omitEnumNames ? '' : 'DELAYED_DIRECT');
+
+  static const $core.List<MeshPacket_Delayed> values = <MeshPacket_Delayed> [
+    NO_DELAY,
+    DELAYED_BROADCAST,
+    DELAYED_DIRECT,
+  ];
+
+  static final $core.Map<$core.int, MeshPacket_Delayed> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static MeshPacket_Delayed? valueOf($core.int value) => _byValue[value];
+
+  const MeshPacket_Delayed._($core.int v, $core.String n) : super(v, n);
+}
+
+///
+///  Enum to identify which transport mechanism this packet arrived over
+class MeshPacket_TransportMechanism extends $pb.ProtobufEnum {
+  static const MeshPacket_TransportMechanism TRANSPORT_INTERNAL = MeshPacket_TransportMechanism._(0, _omitEnumNames ? '' : 'TRANSPORT_INTERNAL');
+  static const MeshPacket_TransportMechanism TRANSPORT_LORA = MeshPacket_TransportMechanism._(1, _omitEnumNames ? '' : 'TRANSPORT_LORA');
+  static const MeshPacket_TransportMechanism TRANSPORT_LORA_ALT1 = MeshPacket_TransportMechanism._(2, _omitEnumNames ? '' : 'TRANSPORT_LORA_ALT1');
+  static const MeshPacket_TransportMechanism TRANSPORT_LORA_ALT2 = MeshPacket_TransportMechanism._(3, _omitEnumNames ? '' : 'TRANSPORT_LORA_ALT2');
+  static const MeshPacket_TransportMechanism TRANSPORT_LORA_ALT3 = MeshPacket_TransportMechanism._(4, _omitEnumNames ? '' : 'TRANSPORT_LORA_ALT3');
+  static const MeshPacket_TransportMechanism TRANSPORT_MQTT = MeshPacket_TransportMechanism._(5, _omitEnumNames ? '' : 'TRANSPORT_MQTT');
+  static const MeshPacket_TransportMechanism TRANSPORT_MULTICAST_UDP = MeshPacket_TransportMechanism._(6, _omitEnumNames ? '' : 'TRANSPORT_MULTICAST_UDP');
+  static const MeshPacket_TransportMechanism TRANSPORT_API = MeshPacket_TransportMechanism._(7, _omitEnumNames ? '' : 'TRANSPORT_API');
+
+  static const $core.List<MeshPacket_TransportMechanism> values = <MeshPacket_TransportMechanism> [
+    TRANSPORT_INTERNAL,
+    TRANSPORT_LORA,
+    TRANSPORT_LORA_ALT1,
+    TRANSPORT_LORA_ALT2,
+    TRANSPORT_LORA_ALT3,
+    TRANSPORT_MQTT,
+    TRANSPORT_MULTICAST_UDP,
+    TRANSPORT_API,
+  ];
+
+  static final $core.Map<$core.int, MeshPacket_TransportMechanism> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static MeshPacket_TransportMechanism? valueOf($core.int value) => _byValue[value];
+
+  const MeshPacket_TransportMechanism._($core.int v, $core.String n) : super(v, n);
+}
+
+///
+///  Log levels, chosen to match python logging conventions.
+class LogRecord_Level extends $pb.ProtobufEnum {
+  static const LogRecord_Level UNSET = LogRecord_Level._(0, _omitEnumNames ? '' : 'UNSET');
+  static const LogRecord_Level CRITICAL = LogRecord_Level._(50, _omitEnumNames ? '' : 'CRITICAL');
+  static const LogRecord_Level ERROR = LogRecord_Level._(40, _omitEnumNames ? '' : 'ERROR');
+  static const LogRecord_Level WARNING = LogRecord_Level._(30, _omitEnumNames ? '' : 'WARNING');
+  static const LogRecord_Level INFO = LogRecord_Level._(20, _omitEnumNames ? '' : 'INFO');
+  static const LogRecord_Level DEBUG = LogRecord_Level._(10, _omitEnumNames ? '' : 'DEBUG');
+  static const LogRecord_Level TRACE = LogRecord_Level._(5, _omitEnumNames ? '' : 'TRACE');
+
+  static const $core.List<LogRecord_Level> values = <LogRecord_Level> [
+    UNSET,
+    CRITICAL,
+    ERROR,
+    WARNING,
+    INFO,
+    DEBUG,
+    TRACE,
+  ];
+
+  static final $core.Map<$core.int, LogRecord_Level> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static LogRecord_Level? valueOf($core.int value) => _byValue[value];
+
+  const LogRecord_Level._($core.int v, $core.String n) : super(v, n);
+}
+
+
+const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');
