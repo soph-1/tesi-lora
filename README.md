@@ -1,6 +1,5 @@
 # Reti Wireless Basate su Tecnologia LoRa
-### Una analisi del funzionamento e dei protocolli di sicurezza con
-validazione tramite prototipo su rete Meshtastic.
+### Una analisi del funzionamento e dei protocolli di sicurezza con validazione tramite prototipo su rete Meshtastic.
 
 ## 📌 Overview
 
