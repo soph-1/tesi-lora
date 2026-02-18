@@ -1,0 +1,112 @@
+#--------------------------------------------
+# FLUTTER / DART
+#--------------------------------------------
+
+.dart_tool/
+.packages
+.pub/
+.pub-cache/
+.flutter-plugins
+.flutter-plugins-dependencies
+.melos_tool/
+analysis_options.yaml
+
+# Build outputs (Android, iOS, Flutter)
+build/
+**/build/
+
+# Coverage
+coverage/
+
+# Generated docs
+doc/api/
+
+#--------------------------------------------
+# ANDROID
+#--------------------------------------------
+
+# Gradle files
+android/.gradle/
+android/.idea/
+android/local.properties
+android/key.properties
+
+# Generated folders
+android/app/debug/
+android/app/profile/
+android/app/release/
+android/build/
+
+# Keystore (if present)
+*.jks
+*.keystore
+
+#--------------------------------------------
+# iOS / macOS
+#--------------------------------------------
+
+ios/Flutter/.last_build_id
+ios/.generated/
+ios/Pods/
+ios/Runner.xcworkspace/
+ios/Runner.xcodeproj/project.xcworkspace/
+ios/build/
+macos/Pods/
+macos/build/
+
+# Xcode files
+*.xcworkspace
+*.xcuserstate
+*.xcuserdata/
+*.moved-aside
+DerivedData/
+
+#--------------------------------------------
+# WINDOWS
+#--------------------------------------------
+
+windows/.vs/
+windows/GeneratedFiles/
+windows/build/
+
+#--------------------------------------------
+# LINUX
+#--------------------------------------------
+
+linux/build/
+
+#--------------------------------------------
+# WEB
+#--------------------------------------------
+
+web/.dart_tool/
+
+#--------------------------------------------
+# EDITORS & IDE
+#--------------------------------------------
+
+# IntelliJ / Android Studio
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# VSCode
+.vscode/
+
+#--------------------------------------------
+# SYSTEM FILES
+#--------------------------------------------
+
+.DS_Store
+Thumbs.db
+*.swp
+*.log
+*.tmp
+
+#--------------------------------------------
+# APP / SYMBOLICATION
+#--------------------------------------------
+
+app.*.map.json
+app.*.symbols
